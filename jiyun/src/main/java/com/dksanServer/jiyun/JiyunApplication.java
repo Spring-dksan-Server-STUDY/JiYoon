@@ -2,6 +2,7 @@ package com.dksanServer.jiyun;
 
 import com.dksanServer.jiyun.assignment1.Bank;
 import com.dksanServer.jiyun.assignment1.KBBank;
+import com.dksanServer.jiyun.assignment1.impl.KakaoAuthService;
 import com.dksanServer.jiyun.week1.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -54,6 +55,10 @@ public class JiyunApplication {
 		bank.withdrawal(1000);
 		bank.deposit(1000);
 		bank.findAccount("3333-0808-42722");
+
+		KakaoAuthService kakaoAuthService = new KakaoAuthService();
+		kakaoAuthService.signUp("남지윤");
+		kakaoAuthService.login(1);
 	}
 
 }
