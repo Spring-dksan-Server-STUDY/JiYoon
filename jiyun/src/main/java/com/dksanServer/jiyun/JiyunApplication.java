@@ -48,17 +48,17 @@ public class JiyunApplication {
 
 
 		//assignment1
-		KBBank bank = new KBBank();
-		System.out.println("인출 가능 최대 금액 : " + KBBank.maxMoney);
-		bank.requestAuth();
-		bank.withdrawal(1000000000);
-		bank.withdrawal(1000);
-		bank.deposit(1000);
-		bank.findAccount("3333-0808-42722");
-
-		KakaoAuthService kakaoAuthService = new KakaoAuthService();
-		kakaoAuthService.signUp("남지윤");
-		kakaoAuthService.login(1);
+//		KBBank bank = new KBBank();
+//		System.out.println("인출 가능 최대 금액 : " + KBBank.maxMoney);
+//		bank.requestAuth();
+//		bank.withdrawal(1000000000);
+//		bank.withdrawal(1000);
+//		bank.deposit(1000);
+//		bank.findAccount("3333-0808-42722");
+//
+//		KakaoAuthService kakaoAuthService = new KakaoAuthService();
+//		kakaoAuthService.signUp("남지윤");
+//		kakaoAuthService.login(1);
 	}
 
 }
